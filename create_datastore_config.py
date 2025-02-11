@@ -18,11 +18,13 @@ def main(input_path: str, output_path: str, train_duration: datetime.timedelta):
     # modify the datastore config
     
     orig_splits = datastore_config.output.splitting.splits
-    t_start_train = isodate.parse_datetime(orig_splits["train"].start)
-    t_end_train = t_start_train + train_duration
+    t_end_train = isodate.parse_datetime(orig_splits["train"].end)
+    t_start_train = t_end_train - train_duration
     
     datastore_config.output.splitting.splits["train"].start = t_start_train.isoformat()
     datastore_config.output.splitting.splits["train"].end = t_end_train.isoformat()
+    
+    datastore_config.output.coord_ranges["time"].start = t_start_train.isoformat()
     
     # save the modified datastore config
     datastore_config.to_yaml_file(output_path)

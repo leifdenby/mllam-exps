@@ -434,74 +434,6 @@ wheels = [
 ]
 
 [[package]]
-name = "crc32c"
-version = "2.7.1"
-source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
-sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1.tar.gz", hash = "sha256:f91b144a21eef834d64178e01982bb9179c354b3e9e5f4c803b0e5096384968c" }
-wheels = [
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:1fd1f9c6b50d7357736676278a1b8c8986737b8a1c76d7eab4baa71d0b6af67f" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:805c2be1bc0e251c48439a62b0422385899c15289483692bc70e78473c1039f1" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:f4333e62b7844dfde112dbb8489fd2970358eddc3310db21e943a9f6994df749" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6f0fadc741e79dc705e2d9ee967473e8a061d26b04310ed739f1ee292f33674f" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:91ced31055d26d59385d708bbd36689e1a1d604d4b0ceb26767eb5a83156f85d" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:36ffa999b72e3c17f6a066ae9e970b40f8c65f38716e436c39a33b809bc6ed9f" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-musllinux_1_2_aarch64.whl", hash = "sha256:e80114dd7f462297e54d5da1b9ff472e5249c5a2b406aa51c371bb0edcbf76bd" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-musllinux_1_2_i686.whl", hash = "sha256:676f5b46da268b5190f9fb91b3f037a00d114b411313664438525db876adc71f" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-musllinux_1_2_x86_64.whl", hash = "sha256:8d0e660c9ed269e90692993a4457a932fc22c9cc96caf79dd1f1a84da85bb312" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-win32.whl", hash = "sha256:17a2c3f8c6d85b04b5511af827b5dbbda4e672d188c0b9f20a8156e93a1aa7b6" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp310-cp310-win_amd64.whl", hash = "sha256:3208764c29688f91a35392073229975dd7687b6cb9f76b919dae442cabcd5126" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:19e03a50545a3ef400bd41667d5525f71030488629c57d819e2dd45064f16192" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:8c03286b1e5ce9bed7090084f206aacd87c5146b4b10de56fe9e86cbbbf851cf" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:80ebbf144a1a56a532b353e81fa0f3edca4f4baa1bf92b1dde2c663a32bb6a15" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:96b794fd11945298fdd5eb1290a812efb497c14bc42592c5c992ca077458eeba" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:9df7194dd3c0efb5a21f5d70595b7a8b4fd9921fbbd597d6d8e7a11eca3e2d27" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d698eec444b18e296a104d0b9bb6c596c38bdcb79d24eba49604636e9d747305" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:e07cf10ef852d219d179333fd706d1c415626f1f05e60bd75acf0143a4d8b225" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:d2a051f296e6e92e13efee3b41db388931cdb4a2800656cd1ed1d9fe4f13a086" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:a1738259802978cdf428f74156175da6a5fdfb7256f647fdc0c9de1bc6cd7173" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-win32.whl", hash = "sha256:f7786d219a1a1bf27d0aa1869821d11a6f8e90415cfffc1e37791690d4a848a1" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp311-cp311-win_amd64.whl", hash = "sha256:887f6844bb3ad35f0778cd10793ad217f7123a5422e40041231b8c4c7329649d" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:f7d1c4e761fe42bf856130daf8b2658df33fe0ced3c43dadafdfeaa42b57b950" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:73361c79a6e4605204457f19fda18b042a94508a52e53d10a4239da5fb0f6a34" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:afd778fc8ac0ed2ffbfb122a9aa6a0e409a8019b894a1799cda12c01534493e0" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:56ef661b34e9f25991fface7f9ad85e81bbc1b3fe3b916fd58c893eabe2fa0b8" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:571aa4429444b5d7f588e4377663592145d2d25eb1635abb530f1281794fc7c9" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c02a3bd67dea95cdb25844aaf44ca2e1b0c1fd70b287ad08c874a95ef4bb38db" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:99d17637c4867672cb8adeea007294e3c3df9d43964369516cfe2c1f47ce500a" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:f4a400ac3c69a32e180d8753fd7ec7bccb80ade7ab0812855dce8a208e72495f" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:588587772e55624dd9c7a906ec9e8773ae0b6ac5e270fc0bc84ee2758eba90d5" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-win32.whl", hash = "sha256:9f14b60e5a14206e8173dd617fa0c4df35e098a305594082f930dae5488da428" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp312-cp312-win_amd64.whl", hash = "sha256:7c810a246660a24dc818047dc5f89c7ce7b2814e1e08a8e99993f4103f7219e8" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:24949bffb06fc411cc18188d33357923cb935273642164d0bb37a5f375654169" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:2d5d326e7e118d4fa60187770d86b66af2fdfc63ce9eeb265f0d3e7d49bebe0b" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:ba110df60c64c8e2d77a9425b982a520ccdb7abe42f06604f4d98a45bb1fff62" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c277f9d16a3283e064d54854af0976b72abaa89824955579b2b3f37444f89aae" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:881af0478a01331244e27197356929edbdeaef6a9f81b5c6bacfea18d2139289" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:724d5ff4d29ff093a983ae656be3307093706d850ea2a233bf29fcacc335d945" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:b2416c4d88696ac322632555c0f81ab35e15f154bc96055da6cf110d642dbc10" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:60254251b88ec9b9795215f0f9ec015a6b5eef8b2c5fba1267c672d83c78fc02" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:edefc0e46f3c37372183f70338e5bdee42f6789b62fcd36ec53aa933e9dfbeaf" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-win32.whl", hash = "sha256:813af8111218970fe2adb833c5e5239f091b9c9e76f03b4dd91aaba86e99b499" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313-win_amd64.whl", hash = "sha256:7d9ede7be8e4ec1c9e90aaf6884decbeef10e3473e6ddac032706d710cab5888" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:db9ac92294284b22521356715784b91cc9094eee42a5282ab281b872510d1831" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:8fcd7f2f29a30dc92af64a9ee3d38bde0c82bd20ad939999427aac94bbd87373" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:5c056ef043393085523e149276a7ce0cb534b872e04f3e20d74d9a94a75c0ad7" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:03a92551a343702629af91f78d205801219692b6909f8fa126b830e332bfb0e0" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:fb9424ec1a8ca54763155a703e763bcede82e6569fe94762614bb2de1412d4e1" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:88732070f6175530db04e0bb36880ac45c33d49f8ac43fa0e50cfb1830049d23" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:57a20dfc27995f568f64775eea2bbb58ae269f1a1144561df5e4a4955f79db32" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:f7186d098bfd2cff25eac6880b7c7ad80431b90610036131c1c7dd0eab42a332" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:55a77e29a265418fa34bef15bd0f2c60afae5348988aaf35ed163b4bbf93cf37" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-win32.whl", hash = "sha256:ae38a4b6aa361595d81cab441405fbee905c72273e80a1c010fb878ae77ac769" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-cp313-cp313t-win_amd64.whl", hash = "sha256:eee2a43b663feb6c79a6c1c6e5eae339c2b72cfac31ee54ec0209fa736cf7ee5" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-pp310-pypy310_pp73-macosx_10_15_x86_64.whl", hash = "sha256:2e83fedebcdeb80c19e76b7a0e5103528bb062521c40702bf34516a429e81df3" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:30004a7383538ef93bda9b22f7b3805bc0aa5625ab2675690e1b676b19417d4b" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-pp310-pypy310_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:a01b0983aa87f517c12418f9898ecf2083bf86f4ea04122e053357c3edb0d73f" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-pp310-pypy310_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cb2b963c42128b38872e9ed63f04a73ce1ff89a1dfad7ea38add6fe6296497b8" },
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/crc32c/2.7.1/crc32c-2.7.1-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:cdd5e576fee5d255c1e68a4dae4420f21e57e6f05900b38d5ae47c713fc3330d" },
-]
-
-[[package]]
 name = "cycler"
 version = "0.12.1"
 source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
@@ -630,18 +562,6 @@ dependencies = [
 sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/docker-pycreds/0.4.0/docker-pycreds-0.4.0.tar.gz", hash = "sha256:6ce3270bcaf404cc4c3e27e4b6c70d3521deae82fb508767870fdbf772d584d4" }
 wheels = [
     { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/docker-pycreds/0.4.0/docker_pycreds-0.4.0-py2.py3-none-any.whl", hash = "sha256:7266112468627868005106ec19cd0d722702d2b7d5912a28e19b826c3d37af49" },
-]
-
-[[package]]
-name = "donfig"
-version = "0.8.1.post1"
-source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
-dependencies = [
-    { name = "pyyaml", marker = "python_full_version >= '3.11'" },
-]
-sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/donfig/0.8.1.post1/donfig-0.8.1.post1.tar.gz", hash = "sha256:3bef3413a4c1c601b585e8d297256d0c1470ea012afa6e8461dc28bfb7c23f52" }
-wheels = [
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/donfig/0.8.1.post1/donfig-0.8.1.post1-py3-none-any.whl", hash = "sha256:2a3175ce74a06109ff9307d90a230f81215cbac9a751f4d1c6194644b8204f9d" },
 ]
 
 [[package]]
@@ -1417,8 +1337,7 @@ dependencies = [
     { name = "rich" },
     { name = "semver" },
     { name = "xarray" },
-    { name = "zarr", version = "2.18.3", source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }, marker = "python_full_version < '3.11'" },
-    { name = "zarr", version = "3.0.2", source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }, marker = "python_full_version >= '3.11'" },
+    { name = "zarr" },
 ]
 
 [package.metadata]
@@ -1450,6 +1369,7 @@ dependencies = [
     { name = "ipython" },
     { name = "mllam-data-prep" },
     { name = "neural-lam" },
+    { name = "zarrdump" },
 ]
 
 [package.metadata]
@@ -1459,6 +1379,7 @@ requires-dist = [
     { name = "ipython", specifier = ">=8.32.0" },
     { name = "mllam-data-prep", directory = "../mllam-data-prep" },
     { name = "neural-lam", directory = "../neural-lam" },
+    { name = "zarrdump", specifier = ">=0.4.2" },
 ]
 
 [[package]]
@@ -1726,11 +1647,6 @@ wheels = [
     { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/numcodecs/0.15.1/numcodecs-0.15.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:1d471a1829ce52d3f365053a2bd1379e32e369517557c4027ddf5ac0d99c591e" },
     { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/numcodecs/0.15.1/numcodecs-0.15.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1dfdea4a67108205edfce99c1cb6cd621343bc7abb7e16a041c966776920e7de" },
     { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/numcodecs/0.15.1/numcodecs-0.15.1-cp313-cp313-win_amd64.whl", hash = "sha256:a4f7bdb26f1b34423cb56d48e75821223be38040907c9b5954eeb7463e7eb03c" },
-]
-
-[package.optional-dependencies]
-crc32c = [
-    { name = "crc32c", marker = "python_full_version >= '3.11'" },
 ]
 
 [[package]]
@@ -3420,16 +3336,12 @@ wheels = [
 name = "zarr"
 version = "2.18.3"
 source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
-resolution-markers = [
-    "python_full_version < '3.11' and sys_platform == 'linux'",
-    "python_full_version < '3.11' and sys_platform != 'linux' and sys_platform != 'win32'",
-    "python_full_version < '3.11' and sys_platform == 'win32'",
-]
 dependencies = [
-    { name = "asciitree", marker = "python_full_version < '3.11'" },
-    { name = "fasteners", marker = "python_full_version < '3.11' and sys_platform != 'emscripten'" },
+    { name = "asciitree" },
+    { name = "fasteners", marker = "sys_platform != 'emscripten'" },
     { name = "numcodecs", version = "0.13.1", source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }, marker = "python_full_version < '3.11'" },
-    { name = "numpy", marker = "python_full_version < '3.11'" },
+    { name = "numcodecs", version = "0.15.1", source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }, marker = "python_full_version >= '3.11'" },
+    { name = "numpy" },
 ]
 sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/zarr/2.18.3/zarr-2.18.3.tar.gz", hash = "sha256:2580d8cb6dd84621771a10d31c4d777dca8a27706a1a89b29f42d2d37e2df5ce" }
 wheels = [
@@ -3437,27 +3349,18 @@ wheels = [
 ]
 
 [[package]]
-name = "zarr"
-version = "3.0.2"
+name = "zarrdump"
+version = "0.4.2"
 source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
-resolution-markers = [
-    "python_full_version >= '3.12' and sys_platform == 'linux'",
-    "python_full_version >= '3.12' and sys_platform != 'linux' and sys_platform != 'win32'",
-    "python_full_version >= '3.12' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform == 'linux'",
-    "python_full_version == '3.11.*' and sys_platform != 'linux' and sys_platform != 'win32'",
-    "python_full_version == '3.11.*' and sys_platform == 'win32'",
-]
 dependencies = [
-    { name = "donfig", marker = "python_full_version >= '3.11'" },
-    { name = "numcodecs", version = "0.15.1", source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }, extra = ["crc32c"], marker = "python_full_version >= '3.11'" },
-    { name = "numpy", marker = "python_full_version >= '3.11'" },
-    { name = "packaging", marker = "python_full_version >= '3.11'" },
-    { name = "typing-extensions", marker = "python_full_version >= '3.11'" },
+    { name = "click" },
+    { name = "fsspec" },
+    { name = "xarray" },
+    { name = "zarr" },
 ]
-sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/zarr/3.0.2/zarr-3.0.2.tar.gz", hash = "sha256:036b2dabffa9f0148cad57a7be6c69d9761f6b3b833b61b7d29c2ee8a836b46c" }
+sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/zarrdump/0.4.2/zarrdump-0.4.2.tar.gz", hash = "sha256:80f9fc589c6356a9be87b7832a91e45ed4916bd3de356ba58715d22f357272c5" }
 wheels = [
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/zarr/3.0.2/zarr-3.0.2-py3-none-any.whl", hash = "sha256:cd57949934a339cddc4853c0e819fd7f8e0370022e8eeddec2e56a6b13dc5021" },
+    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/zarrdump/0.4.2/zarrdump-0.4.2-py3-none-any.whl", hash = "sha256:c8f5fd23e21975ced4503c80ec9acb40013fcfc76ed7e41da224183453dc4a0c" },
 ]
 
 [[package]]

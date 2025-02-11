@@ -10,6 +10,7 @@ dependencies = [
     "ipython>=8.32.0",
     "mllam-data-prep",
     "neural-lam",
+    "zarrdump>=0.4.2",
 ]
 
 [[tool.uv.index]]

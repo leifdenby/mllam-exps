@@ -6,8 +6,8 @@ stages:
     deps:
     - path: create_datastore_config.py
       hash: md5
-      md5: 93c48e5dc641993e85bc273bfe349f63
-      size: 1376
+      md5: 62ba0bdad5077b43d4867af1feb85ca8
+      size: 1460
     - path: data/base_datastore.yaml
       hash: md5
       md5: 63971f1cf62762f87451d2c5e4d92c2d
@@ -15,19 +15,21 @@ stages:
     outs:
     - path: data/datastore.yaml
       hash: md5
-      md5: f8ba4cb4308bb420d5f6ac1795e1eb6f
-      size: 2292
+      md5: 25250b1fc3c69288941a6aa75a7aad41
+      size: 2297
   prepare_dataset:
     cmd: uv run python -m mllam_data_prep data/datastore.yaml --output data/datastore.zarr  --dask-distributed-local-core-fraction
       0.2
     deps:
     - path: data/datastore.yaml
       hash: md5
-      md5: 709f7f11c617fb5dc27bbd124d8d6adc
-      size: 3547
+      md5: 25250b1fc3c69288941a6aa75a7aad41
+      size: 2297
     outs:
     - path: data/datastore.zarr
       hash: md5
-      md5: c06b6d0f49dbc3c4210ee044b7548bce.dir
-      size: 117860179748
-      nfiles: 58550
+      md5: 978cf3091315ee5e6afed30c26226cbb.dir
+      size: 15703721673
+      nfiles: 6035
+  print_dataset_info:
+    cmd: uv run zarrdump data/datastore.zarr

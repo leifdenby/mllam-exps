@@ -18,7 +18,7 @@ stages:
     - data/datastore.zarr
     
   print_dataset_info:
-    cmd: zarrdump data/datastore.zarr
+    cmd: uv run zarrdump data/datastore.zarr
 
   # create_graph-slurm:
   #   cmd: python -m neural_lam.create_graph --config_path data/config.yaml --name 1level

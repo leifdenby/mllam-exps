@@ -3,7 +3,7 @@ train_duration: P2W
 
 model: graph_lam
 graph: 1level
-hidden_dim: 16
+hidden_dim: 128
 processor_layers: 2
 metrics_watch: val_rmse, mse, random_metric
 logger: mlflow

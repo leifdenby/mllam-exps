@@ -10,3 +10,12 @@
     
 - `params.yaml` can be used as baseline experiment
 - creation of parameter study can be done by creating script e.g. `queue_experiments.sh` that execute `dvc exp run --queue -S parameter={value}` for each value of parameter in script
+
+- `machines/secrets.sh` weren't being copied to temporary dictories for each run experiment through dvc queue
+
+
+mllam-data-prep:
+
+- derived fields in mllam-data-prep drastically increases computation time when using dask distributed
+
+

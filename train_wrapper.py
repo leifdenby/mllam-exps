@@ -11,6 +11,10 @@ import dvc.api
 from loguru import logger
 
 from neural_lam.train_model import main as train_model
+import urllib3
+
+# the mlflow cert is using a local root cert, so we need to disable warnings for SSL connections
+urllib3.disable_warnings()
 
 
 def main(params):

@@ -1,15 +1,15 @@
 #!/bin/bash -l
-#SBATCH --job-name=HAS-NeuralLam
+#SBATCH --job-name=lcd-neural-lam
 #SBATCH --time=1-00:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=8
 #SBATCH --gres=gpu:8  #per node
 #SBATCH --no-requeue
-#SBATCH --partition=prodq
+#SBATCH --partition=defq
 #SBATCH --exclusive
 #SBATCH --account=cu_0003
-#SBATCH --output=/dcai/users/schhau/git-repos/mllam-exps/logs/neurallam.%j.log
-#SBATCH --error=/dcai/users/schhau/git-repos/mllam-exps/logs/neurallam.%j.log
+#SBATCH --output=/dcai/users/denlef/git-repos/mllam/mllam-exps/logs/neurallam.%j.log
+#SBATCH --error=/dcai/users/denlef/git-repos/mllam/mllam-exps/logs/neurallam.%j.log
 
 echo "Started slurm job $SLURM_JOB_ID"
 
@@ -32,4 +32,4 @@ NCCL_IB_HCA=mlx5_0,mlx5_3,mlx5_4,mlx5_5,mlx5_6,mlx5_9,mlx5_10,mlx5_11
 OMP_NUM_THREADS=56
 set +a
 
-srun -ul python train_wrapper.py "$@"
+srun -ul uv run python train_wrapper.py "$@"

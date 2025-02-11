@@ -38,8 +38,13 @@ if __name__ == '__main__':
 
     if options.eval is not None and options.load is None:
         raise ValueError("Must provide --load when evaluating")
+
     args = []
     for k, v in params.items():
+        if v is None:
+            continue
+        if k == "logger_project":
+            k = "logger-project"
         args.extend([f"--{k}", str(v)])
     # args = params
     logger.info(f"Initiating run with parameters: {args}")

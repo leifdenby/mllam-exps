@@ -17,5 +17,5 @@ dependencies = [
 url = "https://nexus.gefion.dcai.dk/repository/pypi/simple/"
 
 [tool.uv.sources]
-neural-lam = { path = "~/git-repos/mllam/neural-lam" }
-mllam-data-prep = { path = "~/git-repos/mllam/mllam-data-prep" }
+mllam-data-prep = { path = "/dcai/users/denlef/git-repos/mllam/mllam-data-prep" }
+neural-lam = { path = "/dcai/users/denlef/git-repos/mllam/neural-lam" }

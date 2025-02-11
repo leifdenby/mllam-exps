@@ -1,9 +1,17 @@
+vars:
+  - uvcmd: "uv run"
+
+
 stages:
   # mllam_version:
   #   cmd: source machines/environment.sh; python -c "from neural_lam import __version__; print(__version__)" > version.mllam.txt
+  save_env_vars:
+    cmd: env > env_vars.txt
+    outs:
+      - env_vars.txt
 
   prepare_dataset_configs:
-    cmd: uv run python create_datastore_config.py --train_duration ${train_duration} --input_path data/base_datastore.yaml --output_path data/datastore.yaml
+    cmd: ${uvcmd} python create_datastore_config.py --train_duration ${train_duration} --input_path data/base_datastore.yaml --output_path data/datastore.yaml
     deps:
       - data/base_datastore.yaml
       - create_datastore_config.py
@@ -20,8 +28,8 @@ stages:
   print_dataset_info:
     cmd: uv run zarrdump data/datastore.zarr
 
-  create_graph-slurm:
-    cmd: python -m neural_lam.create_graph --config_path data/config.yaml --name 1level
+  create_graph:
+    cmd: uv run python -m neural_lam.create_graph --config_path data/config.yaml --name 1level
       --levels 1
     params:
     - data/config.yaml:
@@ -30,23 +38,22 @@ stages:
     - data/datastore.zarr
     outs:
     - data/graph/
+    
   train:
     cmd:
-    - sbatch -W machines/slurm.train.sh --config_path ./data/config.yaml --logger mlflow --logger_project has_hidden_dim
+    - sbatch -W machines/slurm.train.sh --config_path ./data/config.yaml --logger mlflow --logger_project ${experiment_name}
     params:
-    - data/training_params.yaml:
+    - params.yaml:
       - model
       - graph
-      - epochs
-      - batch_size
       - hidden_dim
       - processor_layers
       - metrics_watch
-      - num_workers
-      - num_nodes
       - val_steps_to_log
-    - data/datastore.yaml:
-      - dataset_duration
+    - data/training_params.yaml:
+      - epochs
+      - batch_size
+      - num_nodes
     deps:
     - version.mllam.txt
     - data/graph/

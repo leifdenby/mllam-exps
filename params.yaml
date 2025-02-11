@@ -1,3 +1,5 @@
+experiment_name: lcd_train_timespan_paramstudy
+
 # base experiment configuration
 train_duration: P8W
 

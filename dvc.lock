@@ -33,3 +33,50 @@ stages:
       nfiles: 6371
   print_dataset_info:
     cmd: uv run zarrdump data/datastore.zarr
+  save_env_vars:
+    cmd: env > env_vars.txt
+    outs:
+    - path: env_vars.txt
+      hash: md5
+      md5: b11345f91f22b13d617b08e395f64270
+      size: 6490
+  create_graph-slurm:
+    cmd: uv run python -m neural_lam.create_graph --config_path data/config.yaml --name
+      1level --levels 1
+    deps:
+    - path: data/datastore.zarr
+      hash: md5
+      md5: 895e96a0ec666bdc454697c077942850.dir
+      size: 16579619131
+      nfiles: 6371
+    params:
+      data/config.yaml:
+        datastore:
+          kind: mdp
+          config_path: ../data/datastore.yaml
+    outs:
+    - path: data/graph/
+      hash: md5
+      md5: a6bf314ff9b02c58e05daee9aa9f9e94.dir
+      size: 90190870
+      nfiles: 7
+  create_graph:
+    cmd: uv run python -m neural_lam.create_graph --config_path data/config.yaml --name
+      1level --levels 1
+    deps:
+    - path: data/datastore.zarr
+      hash: md5
+      md5: 895e96a0ec666bdc454697c077942850.dir
+      size: 16579619131
+      nfiles: 6371
+    params:
+      data/config.yaml:
+        datastore:
+          kind: mdp
+          config_path: ../data/datastore.yaml
+    outs:
+    - path: data/graph/
+      hash: md5
+      md5: a6bf314ff9b02c58e05daee9aa9f9e94.dir
+      size: 90190870
+      nfiles: 7

@@ -202,30 +202,30 @@ wheels = [
 
 [[package]]
 name = "boto3"
-version = "1.36.17"
+version = "1.36.18"
 source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
 dependencies = [
     { name = "botocore" },
     { name = "jmespath" },
     { name = "s3transfer" },
 ]
-sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/boto3/1.36.17/boto3-1.36.17.tar.gz", hash = "sha256:5ecae20e780a3ce9afb3add532b61c466a8cb8960618e4fa565b3883064c1346" }
+sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/boto3/1.36.18/boto3-1.36.18.tar.gz", hash = "sha256:be8e32c34d7b103a64fafdd277fa1ec136733b4bbfc11dcfa597efa36a820b37" }
 wheels = [
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/boto3/1.36.17/boto3-1.36.17-py3-none-any.whl", hash = "sha256:59bcf0c4b04d9cc36f8b418ad17ab3c4a99a21a175d2fad7096aa21cbe84630b" },
+    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/boto3/1.36.18/boto3-1.36.18-py3-none-any.whl", hash = "sha256:084ff25af2d7bda3102d6367f5453e2e83f8cde1da73079ea144595b03cb9400" },
 ]
 
 [[package]]
 name = "botocore"
-version = "1.36.17"
+version = "1.36.18"
 source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
 dependencies = [
     { name = "jmespath" },
     { name = "python-dateutil" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/botocore/1.36.17/botocore-1.36.17.tar.gz", hash = "sha256:cec13e0a7ce78e71aad0b397581b4e81824c7981ef4c261d2e296d200c399b09" }
+sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/botocore/1.36.18/botocore-1.36.18.tar.gz", hash = "sha256:ddadafe460e91f11677720a2fcc3ea09c4abb914de2b000da7ba46b4c97da3d7" }
 wheels = [
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/botocore/1.36.17/botocore-1.36.17-py3-none-any.whl", hash = "sha256:069858b2fd693548035d7fd53a774e37e4260fea64e0ac9b8a3aee904f9321df" },
+    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/botocore/1.36.18/botocore-1.36.18-py3-none-any.whl", hash = "sha256:7898d109affd9231c555e71fda88308c1da2db8d39e83d33eb8cb40ebf1ba82f" },
 ]
 
 [[package]]
@@ -468,15 +468,15 @@ distributed = [
 
 [[package]]
 name = "databricks-sdk"
-version = "0.43.0"
+version = "0.44.0"
 source = { registry = "https://nexus.gefion.dcai.dk/repository/pypi/simple/" }
 dependencies = [
     { name = "google-auth" },
     { name = "requests" },
 ]
-sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/databricks-sdk/0.43.0/databricks-sdk-0.43.0.tar.gz", hash = "sha256:bd568220e741a82a54bdf464aed148b49b195aab3b7925588af5e6504c04928b" }
+sdist = { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/databricks-sdk/0.44.0/databricks-sdk-0.44.0.tar.gz", hash = "sha256:367f033c6ece80a5da47f41ce0875a88f3795a82e005c927c0392d4f66ea7629" }
 wheels = [
-    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/databricks-sdk/0.43.0/databricks_sdk-0.43.0-py3-none-any.whl", hash = "sha256:d477aabb44ef56e6b8ade5659dcaed854228e33794ea54efea54fb45f8f19b04" },
+    { url = "https://nexus.gefion.dcai.dk/repository/pypi/packages/databricks-sdk/0.44.0/databricks_sdk-0.44.0-py3-none-any.whl", hash = "sha256:76da49f1167621f638d26963528c1a1558d8cfdf17bea86c974f777891008225" },
 ]
 
 [[package]]

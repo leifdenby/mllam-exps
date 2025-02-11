@@ -1,5 +1,5 @@
 # base experiment configuration
-train_duration: P2W
+train_duration: P8W
 
 model: graph_lam
 graph: 1level

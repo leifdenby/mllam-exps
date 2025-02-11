@@ -1,0 +1,20 @@
+[project]
+name = "mllam-exps"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bokeh>=3.6.3",
+    "dask[distributed]>=2025.1.0",
+    "ipython>=8.32.0",
+    "mllam-data-prep",
+    "neural-lam",
+]
+
+[[tool.uv.index]]
+url = "https://nexus.gefion.dcai.dk/repository/pypi/simple/"
+
+[tool.uv.sources]
+neural-lam = { path = "../neural-lam" }
+mllam-data-prep = { path = "../mllam-data-prep" }

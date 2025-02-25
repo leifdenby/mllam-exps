@@ -6,6 +6,7 @@
 #SBATCH --account=cu_0003
 #SBATCH --output=/dcai/users/%u/logs/neurallam.%j.log
 #SBATCH --error=/dcai/users/%u/logs/neurallam.%j.log
+#SBATCH --mem=64G
 
 cd ${DVC_WORKING_DIR}
 echo "Started slurm job $SLURM_JOB_ID"
